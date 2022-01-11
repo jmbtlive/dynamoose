@@ -1,6 +1,6 @@
 import * as ddb from "./index";
 import log = require("../../logger/emitter");
-import {DynamoDB} from "aws-sdk";
+import * as DynamoDB from "aws-sdk/clients/dynamodb";
 
 // Table
 async function main (method: "describeTable", params: DynamoDB.DescribeTableInput): Promise<DynamoDB.DescribeTableOutput>;

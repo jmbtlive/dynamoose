@@ -1,3 +1,5 @@
-import * as AWS from "aws-sdk";
+const AWS = require("aws-sdk/lib/core");
+import * as DynamoDB from "aws-sdk/clients/dynamodb";
 
-export = AWS;
+export const config = AWS.config;
+export { DynamoDB };

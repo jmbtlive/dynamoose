@@ -8,7 +8,8 @@ import {DynamoDBTypeResult, Schema, DynamoDBSetTypeResult, TimestampObject} from
 const {internalProperties} = Internal.General;
 const dynamooseUndefined = Internal.Public.undefined;
 
-import {DynamoDB, AWSError} from "aws-sdk";
+import * as DynamoDB from "aws-sdk/clients/dynamodb";
+import {AWSError} from "aws-sdk/lib/error";
 import {ValueType} from "./Schema";
 import {CallbackType, ObjectType} from "./General";
 import {SerializerOptions} from "./Serializer";
